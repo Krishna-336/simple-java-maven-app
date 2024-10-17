@@ -29,5 +29,15 @@ pipeline {
                 
             }
         }
+        stage('Docker image deploy') { 
+            steps {
+                echo "login into deploy server"
+                echo "pull the latest image with BUild_number"
+                echo "stop existing container"
+                echo "create new conatiner with Build Number"
+                   
+            }
+        }
+        
     }
 }
