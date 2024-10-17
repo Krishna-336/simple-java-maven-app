@@ -17,7 +17,7 @@ pipeline {
         stage('Building Docker Image') { 
             steps {
                 echo "This is stage used to build my source code"
-                sh "docker build -t ${env.docker_url}:$BUILD_NUMBER"
+                sh "docker build -t ${env.docker_url}:$BUILD_NUMBER ."
                 
             }
         }
