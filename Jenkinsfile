@@ -29,7 +29,7 @@ pipeline {
                 
             }
         }
-        stage('Docker image deploy') { 
+        stage('Deploy image  into server') { 
             steps {
                 echo "login into deploy server"
                 echo "pull the latest image with BUild_number"
