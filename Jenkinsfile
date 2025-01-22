@@ -4,7 +4,7 @@ pipeline {
         maven 'maven' 
     }
     environment{
-        docker_url = "181098/demo-pipeline"
+        docker_url = "bala336/demo-pipeline"
     }
     stages {
         stage('Building My Java App') { 
